@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Send a POST request to the API endpoint
-    fetch("http://localhost:3080/api/games", {
+    fetch("https://bytesotech.cloud/games/api/games", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dataTable = $('#gameTable').DataTable();
 
     // Fetch the list of games from the API
-    fetch('http://localhost:3080/api/games', {
+    fetch('https://bytesotech.cloud/games/api/games', {
         method: 'GET',
         headers: {
             'x-api-key': 'e2b89f5b45984c410bb4efbc8861d51433fe0988'

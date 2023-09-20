@@ -18,7 +18,7 @@ function confirmEndGame(gameId) {
 // Function to end the game and update inplay status
 function endGame(gameId) {
     // Send a PUT request to update the game's inplay status to false
-    fetch(`http://localhost:3080/api/games/${gameId}`, {
+    fetch(`https://bytesotech.cloud/games/api/games/${gameId}`, {
         method: 'PUT',
         headers: {
             'x-api-key': 'e2b89f5b45984c410bb4efbc8861d51433fe0988',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const inplayTable = $('#inplayTable').DataTable();
 
     // Fetch the list of games from the API
-    fetch('http://localhost:3080/api/games', {
+    fetch('https://bytesotech.cloud/games/api/games', {
         method: 'GET',
         headers: {
             'x-api-key': 'e2b89f5b45984c410bb4efbc8861d51433fe0988'

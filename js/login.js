@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(loginData);
 
     // Send a POST request to the login API endpoint
-    fetch("http://localhost:3080/api/user/login/", {
+    fetch("https://bytesotech.cloud/games/api/user/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
