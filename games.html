@@ -51,6 +51,9 @@
     <script src="js/games.js"></script>
 
     <script>
+        if(!window.localStorage.getItem("user")){
+            window.location.replace("./login.html")
+        }
         $(function () {
             $("#sidebar").load("sidebar.html");
         });

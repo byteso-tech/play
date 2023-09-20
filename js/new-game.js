@@ -34,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
           // Request was successful
           console.log("Game created successfully.");
           toastr.success("New game Added successfully!");
-          window.location.replace("./games.html");
+          setTimeout(function () {
+            // Redirect to games.html after 3 seconds
+            window.location.replace("./games.html");
+          }, 3000);
 
           // You can perform additional actions here, like redirecting to another page.
         } else {

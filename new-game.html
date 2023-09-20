@@ -57,6 +57,9 @@ rel="stylesheet"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <!-- Load the sidebar content -->
     <script>
+        if(!window.localStorage.getItem("user")){
+            window.location.replace("./login.html")
+        }
         $(function () {
             $("#sidebar").load("sidebar.html");
         });
